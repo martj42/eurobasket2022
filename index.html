@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>Eurobasket 2022 ennustusmäng</title>
+
+<script src="index_files/header-attrs-2.15/header-attrs.js"></script>
+<script src="index_files/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="index_files/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
+<script src="index_files/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="index_files/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="index_files/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="index_files/navigation-1.1/tabsets.js"></script>
+<link href="index_files/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="index_files/highlightjs-9.12.0/highlight.js"></script>
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+
+<script defer data-domain="martj42.github.io" src="https://plausible.io/js/plausible.js"></script>
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+<style type="text/css">code{white-space: pre;}</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
+}
+pre code {
+  padding: 0;
+}
+</style>
+
+
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+
+<p id="form"></p>
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date(Date.UTC(2022, 8, 1, 11, 30, 0)).getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Display the result in the element with id="demo"
+  document.getElementById("form").innerHTML = '<p style="text-align: center; background-color:#a28544;"><b><a href = "https://docs.google.com/forms/d/e/1FAIpQLSd8yR98hV1jQKFj5ypfQT-RTZhidqC9_EgNzcZbAuVTf1o-9A/viewform?usp=sf_link" target="_blank">🚨 ESIMESE RINGI ENNUSTAMINE 🚨</a><br>Ennustuste tähtaeg: ' + days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s</b></p>";
+
+  // If the count down is finished, write some text
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("form").innerHTML = "";
+  }
+}, 1000);
+</script>
+
+<div id="header">
+
+
+
+<h1 class="title toc-ignore">Eurobasket 2022 ennustusmäng</h1>
+
+</div>
+
+
+<!-- ```{r round one, message=F, echo = F, warning = F} -->
+<!-- preds <- read_csv("Tokyo 2020 korvpall.csv.zip") -->
+<!-- round_one <- preds %>%  -->
+<!--   rename_with(.cols = c(3:5), .fn = ~paste0("Iran - Czech Republic", c("_Winner", "_Handicap", "_Top Scorer"))) %>%  -->
+<!--   rename_with(.cols = c(6:8), .fn = ~paste0("Germany - Italy", c("_Winner", "_Handicap", "_Top Scorer"))) %>%  -->
+<!--   rename_with(.cols = c(9:11), .fn = ~paste0("Australia - Nigeria", c("_Winner", "_Handicap", "_Top Scorer"))) %>%  -->
+<!--   rename_with(.cols = c(12:14), .fn = ~paste0("France - USA", c("_Winner", "_Handicap", "_Top Scorer"))) %>%  -->
+<!--   rename_with(.cols = c(15:17), .fn = ~paste0("Argentina - Slovenia", c("_Winner", "_Handicap", "_Top Scorer"))) %>%  -->
+<!--   rename_with(.cols = c(18:20), .fn = ~paste0("Japan - Spain", c("_Winner", "_Handicap", "_Top Scorer"))) %>% -->
+<!--   mutate(across(.cols = c(4, 7, 10, 13, 16, 19), .fns = ~case_when(. == "Czech Republic" ~ "Czech Republic -16.5", -->
+<!--                                                                    . == "Italy" ~ "Italy -5.5", -->
+<!--                                                                    . == "Australia" ~ "Australia -7.5", -->
+<!--                                                                    . == "USA" ~ "USA -11.5", -->
+<!--                                                                    . == "Slovenia" ~ "Slovenia -5.5", -->
+<!--                                                                    . == "Spain" ~ "Spain -19.5", -->
+<!--                                                                    TRUE ~ .))) %>%  -->
+<!--   select(-Timestamp) %>%  -->
+<!--   rename("Nimi" = 1) %>%  -->
+<!--   pivot_longer(cols = c(-Nimi), names_prefix = "_") %>%  -->
+<!--   separate(name, into = c("Game", "cat"), sep = "_") %>% -->
+<!--   pivot_wider(names_from = "cat", values_from = "value") %>%  -->
+<!--   mutate(`Points` = if_else(Winner %in% c("Czech Republic", "Italy", "Australia", "France", "Slovenia", "Spain"), 1, 0), -->
+<!--          `Points ` = if_else(Handicap %in% c("Iran +16.5", "Italy -5.5", "Australia -7.5", "France +11.5", "Slovenia -5.5", -->
+<!--                                              "Japan +19.5"), 1, 0), -->
+<!--          `Points  ` = if_else(`Top Scorer` %in% c("Behnam Yakhchali (IRN)", "Maodo Lô (GER)", "Patty Mills (AUS)", "Luka Dončić (SVN)", "Evan Fournier (FRA)", "Ricky Rubio (ESP)", "Rui Hachimura (日本)"), 1, 0)) %>%  -->
+<!--   add_column(Stage = "Group Day 1") -->
+<!-- ``` -->
+<!-- ```{r round two, message=F, echo = F, warning = F} -->
+<!-- preds <- read_csv("Tokyo 2020 korvpall 2.csv.zip") -->
+<!-- round_two <- preds %>%  -->
+<!--   rename_with(.cols = c(3:5), .fn = ~paste0("Nigeria - Germany", c("_Winner", "_Handicap", "_Top Scorer"))) %>%  -->
+<!--   rename_with(.cols = c(6:8), .fn = ~paste0("USA - Iran", c("_Winner", "_Handicap", "_Top Scorer"))) %>%  -->
+<!--   rename_with(.cols = c(9:11), .fn = ~paste0("Italy - Australia", c("_Winner", "_Handicap", "_Top Scorer"))) %>%  -->
+<!--   rename_with(.cols = c(12:14), .fn = ~paste0("Czech Republic - France", c("_Winner", "_Handicap", "_Top Scorer"))) %>%  -->
+<!--   rename_with(.cols = c(15:17), .fn = ~paste0("Slovenia - Japan", c("_Winner", "_Handicap", "_Top Scorer"))) %>%  -->
+<!--   rename_with(.cols = c(18:20), .fn = ~paste0("Spain - Argentina", c("_Winner", "_Handicap", "_Top Scorer"))) %>% -->
+<!--   mutate(across(.cols = c(4, 7, 10, 13, 16, 19), .fns = ~case_when(. == "Nigeria" ~ "Nigeria -4.5", -->
+<!--                                                                    . == "France" ~ "France -9.5", -->
+<!--                                                                    . == "Australia" ~ "Australia -7.5", -->
+<!--                                                                    . == "USA" ~ "USA -38.5", -->
+<!--                                                                    . == "Slovenia" ~ "Slovenia -21.5", -->
+<!--                                                                    . == "Spain" ~ "Spain -8.5", -->
+<!--                                                                    TRUE ~ .))) %>%  -->
+<!--   select(-Timestamp) %>%  -->
+<!--   rename("Nimi" = 1) %>%  -->
+<!--   pivot_longer(cols = c(-Nimi), names_prefix = "_") %>%  -->
+<!--   separate(name, into = c("Game", "cat"), sep = "_") %>% -->
+<!--   pivot_wider(names_from = "cat", values_from = "value") %>%  -->
+<!--   mutate(`Points` = if_else(Winner %in% c("Germany", "USA", "Australia", "France", "Slovenia", "Spain"), 1, 0), -->
+<!--          `Points ` = if_else(Handicap %in% c("Germany +4.5", "USA -38.5", "Italy +7.5", "France -9.5", "Slovenia -21.5", -->
+<!--                                              "Spain -8.5"), 1, 0), -->
+<!--          `Points  ` = if_else(`Top Scorer` %in% c("Jordan Nwora (NGA)", "Damian Lillard (USA)", "Simone Fontecchio (ITA)", -->
+<!--                                                   "Evan Fournier (FRA)", "Rui Hachimura (日本)", "Nicolás Laprovíttola (ARG)"), 1, 0)) %>%  -->
+<!--   add_column(Stage = "Group Day 2") -->
+<!-- ``` -->
+<!-- ```{r round three, echo=F, message=FALSE, warning=FALSE} -->
+<!-- preds <- read_csv("Tokyo 2020 korvpall 3.csv.zip") -->
+<!-- round_three <- preds %>%  -->
+<!--   rename_with(.cols = c(3:5), .fn = ~paste0("Iran - France", c("_Winner", "_Handicap", "_Top Scorer"))) %>%  -->
+<!--   rename_with(.cols = c(6:8), .fn = ~paste0("Italy - Nigeria", c("_Winner", "_Handicap", "_Top Scorer"))) %>%  -->
+<!--   rename_with(.cols = c(9:11), .fn = ~paste0("Australia - Germany", c("_Winner", "_Handicap", "_Top Scorer"))) %>%  -->
+<!--   rename_with(.cols = c(12:14), .fn = ~paste0("USA - Czech Republic", c("_Winner", "_Handicap", "_Top Scorer"))) %>%  -->
+<!--   rename_with(.cols = c(15:17), .fn = ~paste0("Argentina - Japan", c("_Winner", "_Handicap", "_Top Scorer"))) %>%  -->
+<!--   rename_with(.cols = c(18:20), .fn = ~paste0("Spain - Slovenia", c("_Winner", "_Handicap", "_Top Scorer"))) %>% -->
+<!--   mutate(across(.cols = c(4, 7, 10, 13, 16, 19), .fns = ~case_when(. == "Italy" ~ "Italy -7.5", -->
+<!--                                                                    . == "France" ~ "France -26.5", -->
+<!--                                                                    . == "Australia" ~ "Australia -8.5", -->
+<!--                                                                    . == "USA" ~ "USA -23.5", -->
+<!--                                                                    . == "Slovenia" ~ "Slovenia -2.5", -->
+<!--                                                                    . == "Argentina" ~ "Argentina -10.5", -->
+<!--                                                                    TRUE ~ .))) %>%  -->
+<!--   select(-Timestamp) %>%  -->
+<!--   rename("Nimi" = 1) %>%  -->
+<!--   pivot_longer(cols = c(-Nimi), names_prefix = "_") %>%  -->
+<!--   separate(name, into = c("Game", "cat"), sep = "_") %>% -->
+<!--   pivot_wider(names_from = "cat", values_from = "value") %>%  -->
+<!--   mutate(`Points` = if_else(Winner %in% c("France", "Italy", "Australia", "USA", "Argentina", "Slovenia"), 1, 0), -->
+<!--          `Points ` = if_else(Handicap %in% c("Iran +26.5", "Italy -7.5", "Australia -8.5", -->
+<!--                                              "USA -23.5", "Argentina -10.5", "Slovenia -2.5"), 1, 0), -->
+<!--          `Points  ` = if_else(`Top Scorer` %in% c("Hamed Haddadi (IRN)", "Chimezie Metu (NGA)", "Vlatko Čančar (SVN)",  -->
+<!--                                                   "Patty Mills (AUS)", "Jayson Tatum (USA)", "Luis Scola (ARG)"), 1, 0)) %>%  -->
+<!--   add_column(Stage = "Group Day 3") -->
+<!-- ``` -->
+<!-- ```{r round four, echo=F, message=FALSE, warning=FALSE} -->
+<!-- preds <- read_csv("Tokyo 2020 korvpall 4.csv.zip") -->
+<!-- round_four <- preds %>% -->
+<!--   rename_with(.cols = c(3:5), .fn = ~paste0("Slovenia - Germany", c("_Winner", "_Handicap", "_Top Scorer"))) %>% -->
+<!--   rename_with(.cols = c(6:8), .fn = ~paste0("Spain - USA", c("_Winner", "_Handicap", "_Top Scorer"))) %>% -->
+<!--   rename_with(.cols = c(9:11), .fn = ~paste0("Italy - France", c("_Winner", "_Handicap", "_Top Scorer"))) %>% -->
+<!--   rename_with(.cols = c(12:14), .fn = ~paste0("Australia - Argentina", c("_Winner", "_Handicap", "_Top Scorer"))) %>% -->
+<!--   mutate(across(.cols = c(4, 7, 10, 13), .fns = ~case_when(. == "Slovenia" ~ "Slovenia -14.5", -->
+<!--                                                                    . == "USA" ~ "USA -12.5", -->
+<!--                                                                    . == "Australia" ~ "Australia -7.5", -->
+<!--                                                                    . == "France" ~ "France -7.5", -->
+<!--                                                                    TRUE ~ .))) %>% -->
+<!--   select(-Timestamp, -16) %>% -->
+<!--   rename("Nimi" = 1) %>% -->
+<!--   pivot_longer(cols = c(-Nimi), names_prefix = "_") %>% -->
+<!--   separate(name, into = c("Game", "cat"), sep = "_") %>% -->
+<!--   pivot_wider(names_from = "cat", values_from = "value") %>% -->
+<!--   mutate(`Points` = if_else(Winner %in% c("Slovenia", "USA", "France", "Australia"), 1, 0), -->
+<!--          `Points ` = if_else(Handicap %in% c("Slovenia -14.5", "USA -12.5", "France -7.5", "Australia -7.5"), 1, 0), -->
+<!--          `Points  ` = if_else(`Top Scorer` %in% c("Simone Fontecchio (ITA)", "Patty Mills (AUS)"), 1, 0)) %>% -->
+<!--   add_column(Stage = "Quarterfinals") -->
+<!-- ``` -->
+<!-- ```{r round five, echo=F, message=FALSE, warning=FALSE} -->
+<!-- preds <- readr::read_csv("Tokyo 2020 korvpall 5.csv.zip") -->
+<!-- round_five <- preds %>% -->
+<!--   rename_with(.cols = c(3:5), .fn = ~paste0("USA - Australia", c("_Winner", "_Handicap", "_Top Scorer"))) %>% -->
+<!--   rename_with(.cols = c(6:8), .fn = ~paste0("France - Slovenia", c("_Winner", "_Handicap", "_Top Scorer"))) %>% -->
+<!--   mutate(across(.cols = c(4, 7), .fns = ~case_when(. == "Slovenia" ~ "Slovenia -3.5", -->
+<!--                                                                    . == "USA" ~ "USA -10.5", -->
+<!--                                                                    TRUE ~ .))) %>% -->
+<!--   select(-Timestamp, -10) %>% -->
+<!--   rename("Nimi" = 1) %>% -->
+<!--   pivot_longer(cols = c(-Nimi), names_prefix = "_") %>% -->
+<!--   separate(name, into = c("Game", "cat"), sep = "_") %>% -->
+<!--   pivot_wider(names_from = "cat", values_from = "value") %>% -->
+<!--   mutate(`Points` = if_else(Winner %in% c("USA", "France"), 1, 0), -->
+<!--          `Points ` = if_else(Handicap %in% c("USA -10.5", "France +3.5"), 1, 0), -->
+<!--          `Points  ` = if_else(`Top Scorer` %in% c("Kevin Durant (USA)"), 1, 0)) %>% -->
+<!--   add_column(Stage = "Semifinals") -->
+<!-- ``` -->
+<!-- ```{r round six, echo=F, message=FALSE, warning=FALSE} -->
+<!-- preds <- readr::read_csv("Tokyo 2020 korvpall 6.csv.zip") -->
+<!-- round_six <- preds %>% -->
+<!--   rename_with(.cols = c(3:5), .fn = ~paste0("USA - France", c("_Winner", "_Handicap", "_Top Scorer"))) %>% -->
+<!--   rename_with(.cols = c(6:8), .fn = ~paste0("Australia - Slovenia", c("_Winner", "_Handicap", "_Top Scorer"))) %>% -->
+<!--   mutate(across(.cols = c(4, 7), .fns = ~case_when(. == "Slovenia" ~ "Slovenia -2.5", -->
+<!--                                                                    . == "USA" ~ "USA -11.5", -->
+<!--                                                                    TRUE ~ .))) %>% -->
+<!--   select(-Timestamp, -10) %>% -->
+<!--   rename("Nimi" = 1) %>% -->
+<!--   pivot_longer(cols = c(-Nimi), names_prefix = "_") %>% -->
+<!--   separate(name, into = c("Game", "cat"), sep = "_") %>% -->
+<!--   pivot_wider(names_from = "cat", values_from = "value") %>% -->
+<!--   mutate(`Points` = if_else(Winner %in% c("USA", "Australia"), 1, 0), -->
+<!--          `Points ` = if_else(Handicap %in% c("France +11.5", "Australia +2.5"), 1, 0), -->
+<!--          `Points  ` = if_else(`Top Scorer` %in% c("Kevin Durant (USA)", "Patty Mills (AUS)"), 1, 0)) %>% -->
+<!--   add_column(Stage = "Final") -->
+<!-- ``` -->
+<!-- ```{r joins, message = F, echo = F, warning = F} -->
+<!-- game_points <- round_one %>%  -->
+<!--   bind_rows(round_two) %>%  -->
+<!--   bind_rows(round_three) %>%  -->
+<!--   bind_rows(round_four) %>%  -->
+<!--   bind_rows(round_five) %>%  -->
+<!--   bind_rows(round_six) -->
+<!-- game_points <- game_points %>%  -->
+<!--   # complete(Nimi, nesting(Game, Stage)) %>%  -->
+<!--   group_by(Nimi, Stage) %>%  -->
+<!--   mutate(Bonus = toString(`NA`) %>% str_remove_all("NA, "), -->
+<!--          Bonus = if_else(str_detect(Game, Bonus), T, F), -->
+<!--          Points = Points + Bonus * Points, -->
+<!--          `Points ` = `Points ` + Bonus * `Points `, -->
+<!--          `Points  ` = `Points  ` + Bonus * `Points  `, -->
+<!--          Total = Points + `Points ` + `Points  `, -->
+<!--          ` ` = if_else(Bonus == T, "🃏", ""), -->
+<!--          ` ` = if_else(Total == 3,str_c(` `, " 🎯"), ` `), -->
+<!--          ` ` = if_else(Total == 6,str_c(` `, " 🎯 💎"), ` `), -->
+<!--          ` ` = if_else(!str_detect(Handicap, Winner) & str_detect(Handicap, "-"), str_c(` `, " 🤷"), ` `)) %>% -->
+<!--     filter(!str_detect(Game, "topelt")) %>%  -->
+<!--     left_join(game_points %>% ungroup() %>% -->
+<!--               count(Winner, Handicap, `Top Scorer`)) %>% -->
+<!--   group_by(Game) %>%  -->
+<!--   mutate(` ` = if_else(n == 1, str_c(` `, " 🦄"), ` `), -->
+<!--          ` ` = if_else(n > (n()/2), str_c(` `, " 🍻"), ` `)) %>%  -->
+<!--   select(-n) %>% -->
+<!--   ungroup() %>%  -->
+<!--   mutate(id = vctrs::vec_group_id(Game)) %>%  -->
+<!--   group_by(Game) %>%  -->
+<!--   mutate(` ` = if_else(Total == sum(Total) & Total > 0, str_c(` `, " 🤯"), ` `), -->
+<!--          ` ` = if_else(Total == 0 & !str_detect(str_remove(toString(Total), "0"), "0"), str_c(` `, " 😟"), ` `) %>% str_trim(), -->
+<!--          ` ` = if_else(id <= finished_games & Total == 0, str_c(` `, " 💤"), ` `), -->
+<!--          ` ` = if_else(id <= finished_games & Total == 0 & Bonus == T, str_c(` `, " 💩"), ` `)) %>%  -->
+<!--   {.} -->
+<!-- on_fire <- game_points %>%  -->
+<!--   group_by(Nimi) %>%  -->
+<!--   slice_head(n = finished_games) %>%  -->
+<!--   slice_tail(n = 3) %>%  -->
+<!--   tally(Total) %>%  -->
+<!--   filter(n >= 8) %>%  -->
+<!--   pull(Nimi) -->
+<!-- if(game_points %>%  -->
+<!--   filter(Nimi == "H-Vahe") %>%  -->
+<!--     ungroup() %>%  -->
+<!--   slice_head(n = finished_games - 6) %>%  -->
+<!--   slice_tail(n = 3) %>%  -->
+<!--   tally(Total) >= 8) {on_fire <- c(on_fire, "H-Vahe") %>% unique()} -->
+<!-- ranks <- game_points %>%  -->
+<!--   group_by(Nimi) %>%  -->
+<!--   summarise(Total = sum(Total)) %>%  -->
+<!--   mutate(Rank = rank(desc(Total), ties.method = "min")) %>% -->
+<!--   select(-Total) -->
+<!-- give_round_winner <- function(stage){ -->
+<!--   game_points %>%  -->
+<!--     filter(Stage == stage) %>%  -->
+<!--     group_by(Nimi) %>%  -->
+<!--     tally(Total) %>%  -->
+<!--     slice_max(n, n = 1) %>%  -->
+<!--     pull(Nimi) -->
+<!-- } -->
+<!-- country_experts <- game_points %>%  -->
+<!--   select(Nimi, Game, Total) %>%  -->
+<!--   separate(Game, into = c("team1", "team2"), sep = " - ") %>%  -->
+<!--   pivot_longer(cols = c(team1, team2)) %>%  -->
+<!--   group_by(Nimi, value) %>%  -->
+<!--   tally(Total, sort = T) %>%  -->
+<!--   group_by(value) %>%  -->
+<!--   slice_max(order_by = n, n = 1) %>%  -->
+<!--   mutate(flag = case_when(value == "Slovenia" ~ "🇸🇮", -->
+<!--                           value == "Spain" ~ "🇪🇸", -->
+<!--                           value == "Argentina" ~ "🇦🇷", -->
+<!--                           value == "USA" ~ "🇺🇸", -->
+<!--                           value == "France" ~ "🇫🇷", -->
+<!--                           value == "Iran" ~ "🇮🇷", -->
+<!--                           value == "Czech Republic" ~ "🇨🇿", -->
+<!--                           value == "Italy" ~ "🇮🇹", -->
+<!--                           value == "Germany" ~ "🇩🇪", -->
+<!--                           value == "Australia" ~ "🇦🇺", -->
+<!--                           value == "Japan" ~ "🇯🇵", -->
+<!--                           value == "Nigeria" ~ "🇳🇬")) %>%  -->
+<!--   group_by(Nimi) %>%  -->
+<!--   summarize(flag = flag %>% toString() %>% str_remove_all(",")) -->
+<!-- giveups <- c("RistoS", "H-Vahe", "Valmar Raigo") -->
+<!-- ``` -->
+<!-- ```{r table, message=F, echo = F, warning = F} -->
+<!-- game_points %>%  -->
+<!--   left_join(ranks, by = "Nimi") %>% -->
+<!--   mutate(Nimi2 =if_else(Nimi %in% giveups, str_c(Nimi, " 🏳️"), Nimi), -->
+<!--          Nimi2 =if_else(Nimi %in% c("Kristo Kluiverson", "Mart J", "Hugo Costa", "Majakas"), str_c(Nimi, " 🍫"), Nimi2), -->
+<!--          Nimi2 = if_else(Nimi %in% give_round_winner("Group Day 1"), str_c(Nimi2, " 🎖️"), Nimi2),    #STAGE WINNERS -->
+<!--          Nimi2 = if_else(Nimi %in% give_round_winner("Group Day 2"), str_c(Nimi2, " 🎖️"), Nimi2),    #STAGE WINNERS -->
+<!--          Nimi2 = if_else(Nimi %in% give_round_winner("Group Day 3"), str_c(Nimi2, " 🎖️"), Nimi2),    #STAGE WINNERS -->
+<!--          Nimi2 = if_else(Nimi %in% give_round_winner("Quarterfinals"), str_c(Nimi2, " 🎖️"), Nimi2),    #STAGE WINNERS -->
+<!--          Nimi2 = if_else(Nimi %in% give_round_winner("Semifinals"), str_c(Nimi2, " 🎖️"), Nimi2),    #STAGE WINNERS -->
+<!--          Nimi2 = if_else(Nimi %in% give_round_winner("Final"), str_c(Nimi2, " 🎖️"), Nimi2),    #STAGE WINNERS -->
+<!--          Nimi2 = if_else(Nimi %in% on_fire & finished_games != 26 & !(Nimi %in% c(giveups, "Priit Evart")), str_c(Nimi2, " 🔥"), Nimi2)) %>% -->
+<!--   left_join(country_experts, by = "Nimi") %>%  -->
+<!--   mutate(flag = if_else(is.na(flag),"", flag), -->
+<!--          Nimi2 = case_when(Rank == 1 & finished_games == 26 ~ str_c("🥇 ", Nimi2), -->
+<!--                           Rank == 2 & finished_games == 26 ~ str_c("🥈 ", Nimi2), -->
+<!--                           Rank == 3 & finished_games == 26 ~ str_c("🥉 ", Nimi2), -->
+<!--                           TRUE ~ Nimi2), -->
+<!--          Nimi = str_c(Rank, ". ", Nimi2, " ", flag) %>% str_squish()) %>% -->
+<!--   arrange(Rank, Nimi) %>%  -->
+<!--   select(Nimi, Total, -->
+<!--          Stage, -->
+<!--          Game, -->
+<!--          Winner, Points, Handicap, `Points `, `Top Scorer`, `Points  `, -->
+<!--          ` `) %>%  -->
+<!--   reactable(groupBy = c("Nimi", -->
+<!--                         "Stage" -->
+<!--                         ), -->
+<!--             showPagination = F, -->
+<!--             showSortIcon = F, -->
+<!--             showPageInfo = F, -->
+<!--             onClick = "expand", -->
+<!--             rowStyle = list(cursor = "pointer"), -->
+<!--             defaultPageSize = 1000, -->
+<!--             class = "my-tbl", -->
+<!--             highlight = T, -->
+<!--             columns = list(` ` = colDef(maxWidth = 100), -->
+<!--                            Nimi = colDef(minWidth = 180, maxWidth = 250, style = list(fontWeight = "Bold"), -->
+<!--                                          grouped = JS("function(cellInfo) { -->
+<!--                                                       return cellInfo.value -->
+<!--                                                       }")), -->
+<!--                            Stage = colDef(grouped = JS("function(cellInfo) { -->
+<!--                                                       return cellInfo.value -->
+<!--                                                       }"), name = "", minWidth = 90), -->
+<!--                            Points = colDef(aggregate = "sum", defaultSortOrder = "desc", maxWidth = 65), -->
+<!--                            `Points ` = colDef(aggregate = "sum", name = "Points", defaultSortOrder = "desc", maxWidth = 65), -->
+<!--                            `Points  ` = colDef(aggregate = "sum", name = "Points", defaultSortOrder = "desc", maxWidth = 65), -->
+<!--                            Total = colDef(aggregate = "sum", style = list(fontWeight = "Bold"), defaultSortOrder = "desc", -->
+<!--                                           maxWidth = 65), -->
+<!--                            Winner = colDef(name = "Prediction"), -->
+<!-- #       ` ` = colDef( -->
+<!-- #   aggregate = JS(" -->
+<!-- #     function(values, rows) { -->
+<!-- #     //var strings2 = values.split(' '); -->
+<!-- #       var result = values.sort(); -->
+<!-- #       return result.join(' ') -->
+<!-- #     } -->
+<!-- #   ") -->
+<!-- # ), -->
+<!--       Handicap = colDef(name = "Prediction", minWidth = 120), -->
+<!--       Game = colDef(minWidth = 150, cell = function(value) { -->
+<!--         color <- switch( -->
+<!--           value, # sinine - "#0085c7"  kollane - "#f4c300" -->
+<!--           "Iran - Czech Republic" = "#0085c7", -->
+<!--           "Germany - Italy" = "#0085c7", -->
+<!--           "Australia - Nigeria" = "#0085c7", -->
+<!--           "France - USA" = "#0085c7", -->
+<!--           "Argentina - Slovenia" = "#0085c7", -->
+<!--           "Japan - Spain" = "#0085c7", -->
+<!--           "Nigeria - Germany" = "#0085c7", -->
+<!--           "USA - Iran" = "#0085c7", -->
+<!--           "Italy - Australia" = "#0085c7", -->
+<!--           "Czech Republic - France" = "#0085c7", -->
+<!--           "Slovenia - Japan" = "#0085c7", -->
+<!--           "Spain - Argentina" = "#0085c7", -->
+<!--           "Iran - France" = "#0085c7", -->
+<!--           "Italy - Nigeria" = "#0085c7", -->
+<!--           "Australia - Germany" = "#0085c7", -->
+<!--           "USA - Czech Republic" = "#0085c7", -->
+<!--           "Spain - Slovenia" = "#0085c7", -->
+<!--           "Argentina - Japan" = "#0085c7", -->
+<!--           "Slovenia - Germany" = "#0085c7", -->
+<!--           "Spain - USA" = "#0085c7", -->
+<!--           "Italy - France" = "#0085c7", -->
+<!--           "Australia - Argentina" = "#0085c7", -->
+<!--           "USA - Australia" = "#0085c7", -->
+<!--           "France - Slovenia" = "#0085c7", -->
+<!--           "USA - France" = "#0085c7", -->
+<!--           "Australia - Slovenia" = "#0085c7") -->
+<!--         badge <- status_badge(color = color) -->
+<!--         tagList(badge, value) -->
+<!--       }), -->
+<!--       `Top Scorer` = colDef(name = "Prediction", minWidth = 135)), -->
+<!--       columnGroups = list( -->
+<!--         colGroup(name = "Winner", columns = c("Winner", "Points")), -->
+<!--         colGroup(name = "Handicap", columns = c("Handicap", "Points ")), -->
+<!--         colGroup(name = "Top Scorer", columns = c("Top Scorer", "Points  ")) -->
+<!--       )) -->
+<!-- ``` -->
+<!-- Legend: -->
+<!-- 🃏 - Boonus -->
+<!-- 🎯 - Pihtas põhjas -->
+<!-- 💎 - Boonus pihtas põhjas -->
+<!-- 💤 - Mängu eest null punkti -->
+<!-- 💩 - Boonus mängu eest null punkti -->
+<!-- 🦄 - Unikaalne ennustus -->
+<!-- 🍻 - Populaarne ennustus -->
+<!-- 🤷 - Ennustus, kus maksimum punktid pole võimalik -->
+<!-- 🤯 - Ainus, kes selle mängu eest punkte sai -->
+<!-- 😟 - Ainus, kes selle mängu eest punkte ei saanud -->
+<!-- 🍫 - Kingitus parimale sõbrale - iga osaleja saab saata anonüümselt ühele teisele mängijale šokolaadi -->
+<!-- 💶 - Andis altkäemaksu, et punkte juurde saada - €100/punkt -->
+<!-- 🔥 - Viimases kolmes mängus on saanud kokku üle 7 punkti -->
+<!-- 🇦🇷 🇦🇺 🇨🇿 🇩🇪 🇪🇸 🇫🇷 🇮🇷 🇮🇹 🇯🇵 🇳🇬 🇸🇮 🇺🇸 - Enim punkte selle riigi mängude eest -->
+<!-- 🎖️ - Vooru võitja -->
+<!-- 🏳️ - Andis alla enne lõppu -->
+<!-- ~~🪦 - Puudub teoreetiline võidu võimalus~~ (see oli hea idee, aga ei viitsi selle kohta koodi kirjutada) -->
+<!-- Kellelgi on ideid, mida veel lisada (ja saatke ka kellele te šokolaadi tahate anda) ➡️ [mart\@disroot.org](mailto:mart@disroot.org){.email} -->
+<!-- Data: -->
+<!-- [Group Day 1](Tokyo 2020 korvpall.csv.zip) -->
+<!-- [Group Day 2](Tokyo 2020 korvpall 2.csv.zip) -->
+<!-- [Group Day 3](Tokyo 2020 korvpall 3.csv.zip) -->
+<!-- [Quarterfinals](Tokyo 2020 korvpall 4.csv.zip) -->
+<!-- [Semifinals](Tokyo 2020 korvpall 5.csv.zip) -->
+<!-- [Final](Tokyo 2020 korvpall 6.csv.zip) -->
+<p>0 / 76 = 0%</p>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open');
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
