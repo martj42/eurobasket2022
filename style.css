@@ -1,7 +1,10 @@
- @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap');
- 
+ @import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap')
+ @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 body {
-    font-family: 'Titillium Web';
+        font-family: 'Open Sans', sans-serif;
+  
 }
 
 h1.title {
